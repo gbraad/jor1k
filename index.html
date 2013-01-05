@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>jor1k: OR1000 Javascript Emulator Running Linux</title>
+        <meta name="keywords" content="opencore, emulation, or1000, javascript, linux">
+        <meta name="author" content="Sebastian Macke">
+        <link rel="stylesheet" href="css/default.css">
+    </head>
+    <body>
+        <h1>jor1k: OR1000 Javascript Emulator Running Linux</h1>
+    
+        <table>
+            <tr>
+            	<td>
+	                <table id="tty" class="terminal" border="0" title="tty0"></table>
+	            </td>
+	            <td valign="top">
+                    <canvas id="fb" class="screen" width="320", height="240" title="fb0">
+                        Framebuffer uses canvas
+                    </canvas>
+	            </td>
+            </tr>
+        </table>
+        
+        <table id="Debug">
+        </table>
+
+        <div id="infobox">
+            <h3>Don't know what to do?</h3>
+            <p>
+                Have a look at the <a href="https://github.com/s-macke/jor1k/wiki/Explore-the-emulator" target="_blank">Explore the emulator</a> page at the project wiki.
+            </p>
+
+            <h3>Links</h3>
+            <p>
+                <li><a href="https://github.com/s-macke/jor1k/">Project</a> page at github</li>
+                <li><a href="https://github.com/s-macke/jor1k/issues">Bugtracker</a> to report any issues or feature requests</li>
+                <li><a href="https://github.com/s-macke/jor1k/wiki">Wiki</a> containing more detailed descriptions</li>
+            </p>
+
+            <h4>Developer and contributors</h4>
+            <p>
+                <li>Sebastian Macke <a href="http://simulationcorner.net/">simulationcorner.net</a></li>
+                <li>Gerard Braad <a href="http://gbraad.nl">gbraad.nl</a></li>
+            </p>
+
+        </div>
+    </body>
+    <script src="js/terminal.js"></script>
+    <script src="js/terminal-input.js"></script>
+    <script src="js/framebuffer.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/uart.js"></script>
+    <script src="js/ram.js"></script>
+    <script src="js/cpu.js"></script>
+    <script src="js/system.js"></script>    
+</html>
